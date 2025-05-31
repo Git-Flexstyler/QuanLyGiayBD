@@ -42,8 +42,9 @@ namespace QuanLyGiayBD3
                 {
                     MessageBox.Show("Đăng nhập thành công!");
                     this.Hide();
-                    FormMain f = new FormMain();
-                    f.Show();
+                    FormMain f = new FormMain(user);
+                    f.ShowDialog();
+                    this.Show();
                 }
                 else
                 {

@@ -13,10 +13,12 @@ namespace QuanLyGiayBD3
     public partial class FormMain : Form
     {
         private Form currentFormChild; // Form con đang mở
-
-        public FormMain()
+        private string tenTaiKhoan;
+        public FormMain(string taiKhoan)
         {
             InitializeComponent();
+            tenTaiKhoan = taiKhoan;
+            lblAdmin.Text = "Hello, " + tenTaiKhoan;
         }
 
         private void OpenChildForm(Form childForm)
