@@ -16,6 +16,28 @@ namespace QuanLyGiayBD3
         public FormLogin()
         {
             InitializeComponent();
+
+            // Gán sự kiện phím
+            txtTaiKhoan.KeyDown += TxtTaiKhoan_KeyDown;
+            txtMatKhau.KeyDown += TxtMatKhau_KeyDown;
+    }
+
+        private void TxtTaiKhoan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; // Ngăn tiếng "beep"
+                txtMatKhau.Focus();        // Di chuyển tới ô mật khẩu
+            }
+        }
+
+        private void TxtMatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                btnLogin.PerformClick(); // Gọi sự kiện đăng nhập
+            }
         }
 
         private void chkHienMatKhau_CheckedChanged(object sender, EventArgs e)
@@ -40,16 +62,17 @@ namespace QuanLyGiayBD3
                 int count = (int)cmd.ExecuteScalar();
                 if (count == 1)
                 {
-                    MessageBox.Show("Đăng nhập thành công!");
-                    this.Hide();
                     FormMain f = new FormMain(user);
-                    f.ShowDialog();
-                    this.Show();
+                    MessageBox.Show("Đăng nhập thành công!");
+                    this.Hide();     // Ẩn FormLogin
+                    f.ShowDialog();  // Mở FormMain (modal)
+                    this.Close();    // Đóng FormLogin sau khi FormMain 
                 }
                 else
                 {
                     MessageBox.Show("Sai tài khoản hoặc mật khẩu!");
                 }
+
             }
         }
     }

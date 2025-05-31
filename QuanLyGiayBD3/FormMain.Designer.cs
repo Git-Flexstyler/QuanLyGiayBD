@@ -64,7 +64,7 @@
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
             this.panelSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(133, 513);
+            this.panelSidebar.Size = new System.Drawing.Size(133, 556);
             this.panelSidebar.TabIndex = 0;
             // 
             // btnDangXuat
@@ -76,7 +76,7 @@
             this.btnDangXuat.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.ForeColor = System.Drawing.Color.White;
             this.btnDangXuat.Image = global::QuanLyGiayBD3.Properties.Resources.dangxuat;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 462);
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 505);
             this.btnDangXuat.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(133, 51);
@@ -233,7 +233,7 @@
             this.panel1.Location = new System.Drawing.Point(133, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 46);
+            this.panel1.Size = new System.Drawing.Size(883, 46);
             this.panel1.TabIndex = 1;
             // 
             // lblNgay
@@ -241,7 +241,7 @@
             this.lblNgay.AutoSize = true;
             this.lblNgay.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgay.ForeColor = System.Drawing.Color.White;
-            this.lblNgay.Location = new System.Drawing.Point(542, 12);
+            this.lblNgay.Location = new System.Drawing.Point(618, 14);
             this.lblNgay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNgay.Name = "lblNgay";
             this.lblNgay.Size = new System.Drawing.Size(52, 21);
@@ -277,19 +277,20 @@
             this.panelContainer.Location = new System.Drawing.Point(133, 46);
             this.panelContainer.Margin = new System.Windows.Forms.Padding(2);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(801, 467);
+            this.panelContainer.Size = new System.Drawing.Size(883, 510);
             this.panelContainer.TabIndex = 2;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 513);
+            this.ClientSize = new System.Drawing.Size(1016, 556);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSidebar);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelSidebar.ResumeLayout(false);
