@@ -47,14 +47,18 @@ namespace QuanLyGiayBD3
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string user = txtTaiKhoan.Text;
-            string pass = txtMatKhau.Text;
+            string user = txtTaiKhoan.Text.Trim();
+            string pass = txtMatKhau.Text.Trim();
 
             string connStr = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=QuanLyGiayTheThao;Integrated Security=True;TrustServerCertificate=True";
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
-                string query = "SELECT COUNT(*) FROM TaiKhoan WHERE TaiKhoan = @user AND MatKhau = @pass";
+                string query = @"
+            SELECT COUNT(*) 
+            FROM NhanVien 
+            WHERE TaiKhoan = @user AND MatKhau = @pass";
+
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@user", user);
                 cmd.Parameters.AddWithValue("@pass", pass);
@@ -62,18 +66,25 @@ namespace QuanLyGiayBD3
                 int count = (int)cmd.ExecuteScalar();
                 if (count == 1)
                 {
-                    FormMain f = new FormMain(user);
                     MessageBox.Show("Đăng nhập thành công!");
-                    this.Hide();     // Ẩn FormLogin
-                    f.ShowDialog();  // Mở FormMain (modal)
-                    this.Close();    // Đóng FormLogin sau khi FormMain 
+
+                    // Lấy quyền để truyền sang FormMain (nếu cần)
+                    string getRole = "SELECT Quyen FROM NhanVien WHERE TaiKhoan = @user";
+                    SqlCommand roleCmd = new SqlCommand(getRole, conn);
+                    roleCmd.Parameters.AddWithValue("@user", user);
+                    string role = (string)roleCmd.ExecuteScalar();
+
+                    FormMain f = new FormMain(user, role); // Truyền thêm quyền nếu FormMain hỗ trợ
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Sai tài khoản hoặc mật khẩu!");
                 }
-
             }
         }
+
     }
 }

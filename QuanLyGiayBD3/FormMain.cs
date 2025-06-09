@@ -12,13 +12,29 @@ namespace QuanLyGiayBD3
 {
     public partial class FormMain : Form
     {
-        private Form currentFormChild; // Form con đang mở
+        private Form currentFormChild;
         private string tenTaiKhoan;
-        public FormMain(string taiKhoan)
+        private string quyenNguoiDung;
+
+        public FormMain(string taiKhoan, string quyen)
         {
             InitializeComponent();
             tenTaiKhoan = taiKhoan;
-            lblAdmin.Text = "Hello, " + tenTaiKhoan;
+            quyenNguoiDung = quyen;
+
+            lblAdmin.Text = $"Hello, {tenTaiKhoan} ({quyenNguoiDung})";
+
+            PhanQuyenNguoiDung();
+        }
+
+        private void PhanQuyenNguoiDung()
+        {
+            // Giả sử chỉ Admin mới có quyền xem Nhân viên và Thống kê
+            if (quyenNguoiDung != "Admin")
+            {
+                btnNhanVien.Enabled = false;
+                btnThongKe.Enabled = false;
+            }
         }
 
         private void OpenChildForm(Form childForm)
