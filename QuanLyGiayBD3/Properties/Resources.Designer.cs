@@ -133,6 +133,26 @@ namespace QuanLyGiayBD3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kinhlup {
+            get {
+                object obj = ResourceManager.GetObject("kinhlup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kinhlup2 {
+            get {
+                object obj = ResourceManager.GetObject("kinhlup2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shoe__2_ {
             get {
                 object obj = ResourceManager.GetObject("shoe (2)", resourceCulture);

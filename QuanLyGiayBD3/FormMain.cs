@@ -33,7 +33,6 @@ namespace QuanLyGiayBD3
             if (quyenNguoiDung != "Admin")
             {
                 btnNhanVien.Enabled = false;
-                btnThongKe.Enabled = false;
             }
         }
 
@@ -96,10 +95,9 @@ namespace QuanLyGiayBD3
         {
             OpenChildForm(new FormNhapHang());
         }
-
-        private void btnThongKe_Click(object sender, EventArgs e)
+        private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormThongKe());
+            OpenChildForm(new FormTrangChu());
         }
 
 
