@@ -369,9 +369,9 @@
             // 
             // picHinhAnh
             // 
-            this.picHinhAnh.Location = new System.Drawing.Point(1125, 73);
+            this.picHinhAnh.Location = new System.Drawing.Point(1100, 67);
             this.picHinhAnh.Name = "picHinhAnh";
-            this.picHinhAnh.Size = new System.Drawing.Size(120, 160);
+            this.picHinhAnh.Size = new System.Drawing.Size(156, 160);
             this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picHinhAnh.TabIndex = 19;
             this.picHinhAnh.TabStop = false;
