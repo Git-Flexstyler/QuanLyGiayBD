@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblNgay = new System.Windows.Forms.Label();
+            this.lblAdmin = new System.Windows.Forms.Label();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.pictureBoxAdmin = new System.Windows.Forms.PictureBox();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
             this.btnKhoHang = new System.Windows.Forms.Button();
             this.btnNhapHang = new System.Windows.Forms.Button();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblNgay = new System.Windows.Forms.Label();
-            this.pictureBoxAdmin = new System.Windows.Forms.PictureBox();
-            this.lblAdmin = new System.Windows.Forms.Label();
-            this.panelContainer = new System.Windows.Forms.Panel();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.panelSidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).BeginInit();
@@ -50,6 +51,7 @@
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.Teal;
+            this.panelSidebar.Controls.Add(this.btnThongKe);
             this.panelSidebar.Controls.Add(this.btnDangXuat);
             this.panelSidebar.Controls.Add(this.btnTrangChu);
             this.panelSidebar.Controls.Add(this.btnKhoHang);
@@ -63,6 +65,70 @@
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(200, 855);
             this.panelSidebar.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(3, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(195, 45);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Soccaholic$";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.lblNgay);
+            this.panel1.Controls.Add(this.pictureBoxAdmin);
+            this.panel1.Controls.Add(this.lblAdmin);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1324, 71);
+            this.panel1.TabIndex = 1;
+            // 
+            // lblNgay
+            // 
+            this.lblNgay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNgay.AutoSize = true;
+            this.lblNgay.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgay.ForeColor = System.Drawing.Color.White;
+            this.lblNgay.Location = new System.Drawing.Point(927, 22);
+            this.lblNgay.Name = "lblNgay";
+            this.lblNgay.Size = new System.Drawing.Size(79, 32);
+            this.lblNgay.TabIndex = 2;
+            this.lblNgay.Text = "Date: ";
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.Color.White;
+            this.lblAdmin.Location = new System.Drawing.Point(84, 18);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(85, 32);
+            this.lblAdmin.TabIndex = 0;
+            this.lblAdmin.Text = "Admin";
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(200, 71);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1324, 784);
+            this.panelContainer.TabIndex = 2;
+            // 
+            // pictureBoxAdmin
+            // 
+            this.pictureBoxAdmin.Image = global::QuanLyGiayBD3.Properties.Resources.user1;
+            this.pictureBoxAdmin.Location = new System.Drawing.Point(42, 17);
+            this.pictureBoxAdmin.Name = "pictureBoxAdmin";
+            this.pictureBoxAdmin.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxAdmin.TabIndex = 1;
+            this.pictureBoxAdmin.TabStop = false;
             // 
             // btnDangXuat
             // 
@@ -133,17 +199,6 @@
             this.btnNhapHang.UseVisualStyleBackColor = false;
             this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(3, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(195, 45);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Soccaholic$";
-            // 
             // btnNhanVien
             // 
             this.btnNhanVien.BackColor = System.Drawing.Color.Teal;
@@ -195,58 +250,22 @@
             this.btnKhachHang.UseVisualStyleBackColor = false;
             this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
-            // panel1
+            // btnThongKe
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.lblNgay);
-            this.panel1.Controls.Add(this.pictureBoxAdmin);
-            this.panel1.Controls.Add(this.lblAdmin);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1324, 71);
-            this.panel1.TabIndex = 1;
-            // 
-            // lblNgay
-            // 
-            this.lblNgay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNgay.AutoSize = true;
-            this.lblNgay.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgay.ForeColor = System.Drawing.Color.White;
-            this.lblNgay.Location = new System.Drawing.Point(927, 22);
-            this.lblNgay.Name = "lblNgay";
-            this.lblNgay.Size = new System.Drawing.Size(79, 32);
-            this.lblNgay.TabIndex = 2;
-            this.lblNgay.Text = "Date: ";
-            // 
-            // pictureBoxAdmin
-            // 
-            this.pictureBoxAdmin.Image = global::QuanLyGiayBD3.Properties.Resources.user1;
-            this.pictureBoxAdmin.Location = new System.Drawing.Point(42, 17);
-            this.pictureBoxAdmin.Name = "pictureBoxAdmin";
-            this.pictureBoxAdmin.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxAdmin.TabIndex = 1;
-            this.pictureBoxAdmin.TabStop = false;
-            // 
-            // lblAdmin
-            // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.ForeColor = System.Drawing.Color.White;
-            this.lblAdmin.Location = new System.Drawing.Point(84, 18);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(85, 32);
-            this.lblAdmin.TabIndex = 0;
-            this.lblAdmin.Text = "Admin";
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(200, 71);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1324, 784);
-            this.panelContainer.TabIndex = 2;
+            this.btnThongKe.BackColor = System.Drawing.Color.Teal;
+            this.btnThongKe.FlatAppearance.BorderSize = 0;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Image = global::QuanLyGiayBD3.Properties.Resources.thongke;
+            this.btnThongKe.Location = new System.Drawing.Point(2, 615);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(194, 80);
+            this.btnThongKe.TabIndex = 9;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // FormMain
             // 
@@ -285,5 +304,6 @@
         private System.Windows.Forms.PictureBox pictureBoxAdmin;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label lblNgay;
+        private System.Windows.Forms.Button btnThongKe;
     }
 }

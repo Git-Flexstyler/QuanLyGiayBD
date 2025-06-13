@@ -100,6 +100,11 @@ namespace QuanLyGiayBD3
             OpenChildForm(new FormTrangChu());
         }
 
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormThongKe());
+        }
+
 
         // Thêm các button khác tương tự
     }

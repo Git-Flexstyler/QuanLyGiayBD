@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -106,6 +107,12 @@
     <Compile Include="FormTrangChu.Designer.cs">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductPanel.Designer.cs">
+      <DependentUpon>ProductPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -137,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTrangChu.resx">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductPanel.resx">
+      <DependentUpon>ProductPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -208,6 +218,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Images\kinhlup2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anhbia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anhbia2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
