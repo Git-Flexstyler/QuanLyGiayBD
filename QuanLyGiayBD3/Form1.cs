@@ -51,37 +51,41 @@ namespace QuanLyGiayBD3
             string pass = txtMatKhau.Text.Trim();
 
             string connStr = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=QuanLyGiayTheThao;Integrated Security=True;TrustServerCertificate=True";
+
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
-                string query = @"
-            SELECT COUNT(*) 
-            FROM NhanVien 
-            WHERE TaiKhoan = @user AND MatKhau = @pass";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@user", user);
-                cmd.Parameters.AddWithValue("@pass", pass);
-
-                int count = (int)cmd.ExecuteScalar();
-                if (count == 1)
+                // Kiểm tra tài khoản + mật khẩu
+                string query = "SELECT COUNT(*) FROM NhanVien WHERE TaiKhoan = @user AND MatKhau = @pass";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    MessageBox.Show("Đăng nhập thành công!");
+                    cmd.Parameters.AddWithValue("@user", user);
+                    cmd.Parameters.AddWithValue("@pass", pass);
 
-                    // Lấy quyền để truyền sang FormMain (nếu cần)
-                    string getRole = "SELECT Quyen FROM NhanVien WHERE TaiKhoan = @user";
-                    SqlCommand roleCmd = new SqlCommand(getRole, conn);
-                    roleCmd.Parameters.AddWithValue("@user", user);
-                    string role = (string)roleCmd.ExecuteScalar();
+                    int count = (int)cmd.ExecuteScalar();
 
-                    FormMain f = new FormMain(user, role); // Truyền thêm quyền nếu FormMain hỗ trợ
-                    this.Hide();
-                    f.ShowDialog();
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Sai tài khoản hoặc mật khẩu!");
+                    if (count == 1)
+                    {
+                        // Lấy quyền của nhân viên
+                        string getRole = "SELECT Quyen FROM NhanVien WHERE TaiKhoan = @user";
+                        using (SqlCommand roleCmd = new SqlCommand(getRole, conn))
+                        {
+                            roleCmd.Parameters.AddWithValue("@user", user);
+                            string role = roleCmd.ExecuteScalar()?.ToString();
+
+                            MessageBox.Show("Đăng nhập thành công!");
+
+                            FormMain f = new FormMain(user, role); // Truyền user và role
+                            this.Hide();
+                            f.ShowDialog();
+                            this.Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai tài khoản hoặc mật khẩu!");
+                    }
                 }
             }
         }

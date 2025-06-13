@@ -88,7 +88,7 @@
             this.groupBoxThongTinNV.Controls.Add(this.panel1);
             this.groupBoxThongTinNV.Location = new System.Drawing.Point(0, 3);
             this.groupBoxThongTinNV.Name = "groupBoxThongTinNV";
-            this.groupBoxThongTinNV.Size = new System.Drawing.Size(879, 232);
+            this.groupBoxThongTinNV.Size = new System.Drawing.Size(831, 238);
             this.groupBoxThongTinNV.TabIndex = 0;
             this.groupBoxThongTinNV.TabStop = false;
             this.groupBoxThongTinNV.Text = "Quản lý nhân viên";
@@ -104,36 +104,39 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(687, 181);
+            this.btnTimKiem.Location = new System.Drawing.Point(582, 167);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimKiem.Size = new System.Drawing.Size(87, 37);
             this.btnTimKiem.TabIndex = 19;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(587, 181);
+            this.btnXoa.Location = new System.Drawing.Point(462, 167);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.Size = new System.Drawing.Size(81, 37);
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(480, 181);
+            this.btnSua.Location = new System.Drawing.Point(323, 167);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.Size = new System.Drawing.Size(90, 37);
             this.btnSua.TabIndex = 17;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(374, 181);
+            this.btnThem.Location = new System.Drawing.Point(182, 167);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.Size = new System.Drawing.Size(87, 37);
             this.btnThem.TabIndex = 16;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -141,9 +144,9 @@
             // 
             // btnLamMoi
             // 
-            this.btnLamMoi.Location = new System.Drawing.Point(261, 181);
+            this.btnLamMoi.Location = new System.Drawing.Point(39, 167);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(75, 23);
+            this.btnLamMoi.Size = new System.Drawing.Size(95, 37);
             this.btnLamMoi.TabIndex = 15;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
@@ -233,6 +236,7 @@
             // 
             this.txtMaNV.Location = new System.Drawing.Point(39, 50);
             this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.ReadOnly = true;
             this.txtMaNV.Size = new System.Drawing.Size(152, 20);
             this.txtMaNV.TabIndex = 1;
             // 
@@ -252,13 +256,13 @@
             this.panel1.Controls.Add(this.chkKho);
             this.panel1.Location = new System.Drawing.Point(675, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(137, 127);
+            this.panel1.Size = new System.Drawing.Size(137, 119);
             this.panel1.TabIndex = 23;
             // 
             // chkQuanTri
             // 
             this.chkQuanTri.AutoSize = true;
-            this.chkQuanTri.Location = new System.Drawing.Point(12, 23);
+            this.chkQuanTri.Location = new System.Drawing.Point(12, 17);
             this.chkQuanTri.Name = "chkQuanTri";
             this.chkQuanTri.Size = new System.Drawing.Size(108, 17);
             this.chkQuanTri.TabIndex = 20;
@@ -268,7 +272,7 @@
             // chkBanHang
             // 
             this.chkBanHang.AutoSize = true;
-            this.chkBanHang.Location = new System.Drawing.Point(12, 59);
+            this.chkBanHang.Location = new System.Drawing.Point(12, 49);
             this.chkBanHang.Name = "chkBanHang";
             this.chkBanHang.Size = new System.Drawing.Size(123, 17);
             this.chkBanHang.TabIndex = 21;
@@ -278,7 +282,7 @@
             // chkKho
             // 
             this.chkKho.AutoSize = true;
-            this.chkKho.Location = new System.Drawing.Point(12, 96);
+            this.chkKho.Location = new System.Drawing.Point(12, 82);
             this.chkKho.Name = "chkKho";
             this.chkKho.Size = new System.Drawing.Size(96, 17);
             this.chkKho.TabIndex = 22;
@@ -290,7 +294,7 @@
             this.groupBox1.Controls.Add(this.listViewNhanVien);
             this.groupBox1.Location = new System.Drawing.Point(0, 233);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(879, 274);
+            this.groupBox1.Size = new System.Drawing.Size(831, 306);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách nhân viên";
@@ -310,7 +314,7 @@
             this.listViewNhanVien.HideSelection = false;
             this.listViewNhanVien.Location = new System.Drawing.Point(7, 14);
             this.listViewNhanVien.Name = "listViewNhanVien";
-            this.listViewNhanVien.Size = new System.Drawing.Size(866, 248);
+            this.listViewNhanVien.Size = new System.Drawing.Size(818, 286);
             this.listViewNhanVien.TabIndex = 0;
             this.listViewNhanVien.UseCompatibleStateImageBehavior = false;
             this.listViewNhanVien.View = System.Windows.Forms.View.Details;
@@ -329,12 +333,12 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "SĐT";
-            this.columnHeader3.Width = 167;
+            this.columnHeader3.Width = 135;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Quê quán";
-            this.columnHeader4.Width = 171;
+            this.columnHeader4.Width = 140;
             // 
             // columnHeader5
             // 
@@ -349,12 +353,13 @@
             // columnHeader7
             // 
             this.columnHeader7.Text = "Quyền";
+            this.columnHeader7.Width = 150;
             // 
             // FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 507);
+            this.ClientSize = new System.Drawing.Size(836, 543);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxThongTinNV);
             this.Margin = new System.Windows.Forms.Padding(2);
