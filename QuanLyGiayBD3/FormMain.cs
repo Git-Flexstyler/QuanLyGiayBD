@@ -88,7 +88,7 @@ namespace QuanLyGiayBD3
         }
         private void btnKhoHang_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormKhoHang());
+            OpenChildForm(new DonHang());
         }
 
         private void btnNhapHang_Click(object sender, EventArgs e)
