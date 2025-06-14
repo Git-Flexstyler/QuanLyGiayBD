@@ -95,7 +95,6 @@ C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.cspro
 C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormLogin.resources
 C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormChiTietSanPham.resources
 C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormKhachHang.resources
-C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormKhoHang.resources
 C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormMain.resources
 C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormNhanVien.resources
 C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormNhapHang.resources
@@ -151,3 +150,7 @@ C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGi
 C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\bin\Debug\QuanLyGiayBD3.exe.config
 C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\bin\Debug\QuanLyGiayBD3.exe
 C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\bin\Debug\QuanLyGiayBD3.pdb
+C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.ChiTietDonHang.resources
+C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.ChiTietPhieuNhap.resources
+C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.DonHang.resources
+C:\Users\Lenovo\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.HoaDon.resources
