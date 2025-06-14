@@ -128,3 +128,26 @@ C:\Users\admin\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.csproj
 C:\Users\admin\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.exe
 C:\Users\admin\Desktop\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.pdb
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.ChiTietDonHang.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.ChiTietPhieuNhap.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.DonHang.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormLogin.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormChiTietSanPham.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormKhachHang.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormMain.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormNhanVien.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormNhapHang.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormSanPham.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormThongKe.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.FormTrangChu.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.HoaDon.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.ProductPanel.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.exe
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\obj\Debug\QuanLyGiayBD3.pdb
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\bin\Debug\QuanLyGiayBD3.exe.config
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\bin\Debug\QuanLyGiayBD3.exe
+C:\Users\Admin\OneDrive\Máy tính\QuanLyGiayBD\QuanLyGiayBD3\bin\Debug\QuanLyGiayBD3.pdb
