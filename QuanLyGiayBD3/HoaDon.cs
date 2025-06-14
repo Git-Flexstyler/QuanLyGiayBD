@@ -52,6 +52,7 @@ namespace QuanLyGiayBD3
         public HoaDon(string maDonHang)
         {
             InitializeComponent();
+            this.Size = new Size(520, 600);
             HienthiHoaDon(maDonHang);
             HienThiThongTinHoaDon(maDonHang);
 

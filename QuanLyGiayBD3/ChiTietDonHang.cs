@@ -52,6 +52,7 @@ namespace QuanLyGiayBD3
         public ChiTietDonHang(string maDonHang)
         {
             InitializeComponent();
+            this.Size = new Size(1000, 550);
             txtMaDonHang.Text = maDonHang;
             CauHinhListView();
             HienthiDonHang(maDonHang);
@@ -63,11 +64,11 @@ namespace QuanLyGiayBD3
             listViewChiTietDonHang.GridLines = true;
 
             listViewChiTietDonHang.Columns.Clear();
-            listViewChiTietDonHang.Columns.Add("Mã đơn hàng", 120);
-            listViewChiTietDonHang.Columns.Add("Mã sản phẩm", 120);
-            listViewChiTietDonHang.Columns.Add("Size", 120);
-            listViewChiTietDonHang.Columns.Add("Số lượng", 120);
-            listViewChiTietDonHang.Columns.Add("Đơn giá", 120);
+            listViewChiTietDonHang.Columns.Add("Mã đơn hàng", 100);
+            listViewChiTietDonHang.Columns.Add("Mã sản phẩm", 100);
+            listViewChiTietDonHang.Columns.Add("Size", 100);
+            listViewChiTietDonHang.Columns.Add("Số lượng", 100);
+            listViewChiTietDonHang.Columns.Add("Đơn giá", 110);
         }
         private void HienthiDonHang(string maDonHang)
         {

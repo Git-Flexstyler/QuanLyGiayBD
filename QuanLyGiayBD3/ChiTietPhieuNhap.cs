@@ -20,6 +20,7 @@ namespace QuanLyGiayBD3
         public ChiTietPhieuNhap(string maPhieuNhap)
         {
             InitializeComponent();
+            this.Size = new Size(1000, 550);
             txtMaPhieuNhap.Text = maPhieuNhap;
             CauHinhListView();
             HienthiChiTietPhieuNhap(maPhieuNhap);

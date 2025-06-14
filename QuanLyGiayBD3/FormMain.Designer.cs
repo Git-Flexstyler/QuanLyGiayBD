@@ -62,7 +62,7 @@
             this.panelSidebar.Controls.Add(this.btnKhachHang);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
-            this.panelSidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSidebar.Margin = new System.Windows.Forms.Padding(4);
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(266, 1173);
             this.panelSidebar.TabIndex = 0;
@@ -76,7 +76,7 @@
             this.btnThongKe.ForeColor = System.Drawing.Color.White;
             this.btnThongKe.Image = global::QuanLyGiayBD3.Properties.Resources.thongke;
             this.btnThongKe.Location = new System.Drawing.Point(2, 769);
-            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(258, 100);
             this.btnThongKe.TabIndex = 9;
@@ -95,7 +95,7 @@
             this.btnDangXuat.ForeColor = System.Drawing.Color.White;
             this.btnDangXuat.Image = global::QuanLyGiayBD3.Properties.Resources.dangxuat;
             this.btnDangXuat.Location = new System.Drawing.Point(0, 1075);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(266, 98);
             this.btnDangXuat.TabIndex = 8;
@@ -113,7 +113,7 @@
             this.btnTrangChu.ForeColor = System.Drawing.Color.White;
             this.btnTrangChu.Image = global::QuanLyGiayBD3.Properties.Resources.trangchu;
             this.btnTrangChu.Location = new System.Drawing.Point(4, 127);
-            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4);
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.Size = new System.Drawing.Size(258, 102);
             this.btnTrangChu.TabIndex = 1;
@@ -131,7 +131,7 @@
             this.btnDonHang.ForeColor = System.Drawing.Color.White;
             this.btnDonHang.Image = global::QuanLyGiayBD3.Properties.Resources.csdl;
             this.btnDonHang.Location = new System.Drawing.Point(4, 569);
-            this.btnDonHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDonHang.Margin = new System.Windows.Forms.Padding(4);
             this.btnDonHang.Name = "btnDonHang";
             this.btnDonHang.Size = new System.Drawing.Size(258, 87);
             this.btnDonHang.TabIndex = 5;
@@ -149,7 +149,7 @@
             this.btnNhapHang.ForeColor = System.Drawing.Color.White;
             this.btnNhapHang.Image = global::QuanLyGiayBD3.Properties.Resources.document1;
             this.btnNhapHang.Location = new System.Drawing.Point(4, 662);
-            this.btnNhapHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhapHang.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhapHang.Name = "btnNhapHang";
             this.btnNhapHang.Size = new System.Drawing.Size(258, 100);
             this.btnNhapHang.TabIndex = 6;
@@ -179,7 +179,7 @@
             this.btnNhanVien.ForeColor = System.Drawing.Color.White;
             this.btnNhanVien.Image = global::QuanLyGiayBD3.Properties.Resources.user21;
             this.btnNhanVien.Location = new System.Drawing.Point(6, 454);
-            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(252, 108);
             this.btnNhanVien.TabIndex = 4;
@@ -197,7 +197,7 @@
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.Image = global::QuanLyGiayBD3.Properties.Resources.shoe__2_;
             this.btnSanPham.Location = new System.Drawing.Point(4, 237);
-            this.btnSanPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.Size = new System.Drawing.Size(254, 94);
             this.btnSanPham.TabIndex = 2;
@@ -215,7 +215,7 @@
             this.btnKhachHang.ForeColor = System.Drawing.Color.White;
             this.btnKhachHang.Image = global::QuanLyGiayBD3.Properties.Resources.khachhang;
             this.btnKhachHang.Location = new System.Drawing.Point(6, 338);
-            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(256, 108);
             this.btnKhachHang.TabIndex = 3;
@@ -232,7 +232,7 @@
             this.panel1.Controls.Add(this.lblAdmin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(266, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1984, 88);
             this.panel1.TabIndex = 1;
@@ -254,7 +254,7 @@
             // 
             this.pictureBoxAdmin.Image = global::QuanLyGiayBD3.Properties.Resources.user1;
             this.pictureBoxAdmin.Location = new System.Drawing.Point(56, 21);
-            this.pictureBoxAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxAdmin.Name = "pictureBoxAdmin";
             this.pictureBoxAdmin.Size = new System.Drawing.Size(24, 24);
             this.pictureBoxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -277,7 +277,7 @@
             // 
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(266, 88);
-            this.panelContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(4);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1984, 1085);
             this.panelContainer.TabIndex = 2;
@@ -290,10 +290,11 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSidebar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelSidebar.ResumeLayout(false);
             this.panelSidebar.PerformLayout();
